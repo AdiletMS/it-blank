@@ -8,7 +8,7 @@
   <meta name="description" content="Установка ОС, настройка Wi-Fi/роутеров, установка программ, удалённая помощь. Бишкек." />
 
   <!-- Привязка CSS -->
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="./style.css" />
 </head>
 
 <body>
@@ -171,6 +171,11 @@
       </div>
 
       <form class="form" id="requestForm">
+
+	<!-- anti-spam: hidden fields -->
+	<input type="text" id="website" name="website" autocomplete="off" tabindex="-1" aria-hidden="true">
+	<input type="hidden" id="form_ts" name="form_ts">
+
         <div>
           <label for="name">Имя</label>
           <input id="name" name="name" placeholder="Например: Азамат" required />
@@ -223,11 +228,62 @@
       </p>
     </div>
 
+    <!-- REVIEWS -->
+    <div class="card" style="margin-top:18px" id="reviews">
+      <div class="section-title">
+        <h2 style="margin:0; font-size:18px">Отзывы</h2>
+        <span class="small">листай свайпом →</span>
+      </div>
+
+      <div class="reviews-wrap">
+        <button class="rnav" type="button" id="revPrev" aria-label="Назад">‹</button>
+
+        <div class="reviews" id="reviewsTrack" aria-live="polite">
+          <!-- сюда JS вставит карточки -->
+          <div class="review-skeleton">Пока нет опубликованных отзывов. Будь первым 🙂</div>
+        </div>
+
+        <button class="rnav" type="button" id="revNext" aria-label="Вперед">›</button>
+      </div>
+
+      <div class="divider"></div>
+
+      <h3 style="margin:0 0 10px; font-size:16px">Оставить отзыв</h3>
+      <form class="form" id="reviewForm">
+        <div>
+          <label for="revName">Имя</label>
+          <input id="revName" placeholder="Например: Азамат" required>
+        </div>
+
+        <div>
+          <label for="revRating">Оценка</label>
+          <select id="revRating">
+            <option value="5">★★★★★ (5)</option>
+            <option value="4">★★★★☆ (4)</option>
+            <option value="3">★★★☆☆ (3)</option>
+            <option value="2">★★☆☆☆ (2)</option>
+            <option value="1">★☆☆☆☆ (1)</option>
+          </select>
+        </div>
+
+        <div class="full">
+          <label for="revText">Отзыв</label>
+          <textarea id="revText" placeholder="Коротко: что делали и как прошло" required></textarea>
+        </div>
+
+        <div class="full btns">
+          <button type="button" class="btn primary" id="revSend">✍️ Отправить отзыв</button>
+        </div>
+
+        <p class="footer">Отзыв появится на сайте после модерации (чтобы не словить спам).</p>
+      </form>
+    </div>
+
+
     <p class="footer">© <span id="year"></span> IT-специалист Адилет • Бишкек</p>
   </div>
 
   <!-- Привязка JS -->
-  <script src="script.js"></script>
+  <script src="./script.js"></script>
 </body>
-
 </html>
