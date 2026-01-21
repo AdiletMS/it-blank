@@ -1,6 +1,6 @@
 const WA_NUMBER = "996700020525";
 
-const REVIEWS_ENDPOINT = "https://script.google.com/macros/s/AKfycbyTBXxO1szr9EVBAPoH8Unk-sqnEGWRHVhI83JztC3DSmYPSdYf57w6mbvNiU3546tcPQ/exec";
+const REVIEWS_ENDPOINT = "https://script.google.com/macros/s/AKfycbwz0SSq7BbKhUC3mGmdCfghXPHSzYw0xLcQLx0avPDCzJaXXYHlGPw9K9WjiCt5FOvG/exec";
 
 const FORM_ENDPOINT =
   "https://script.google.com/macros/s/AKfycbzRzGsLPM8zG2O75OF0EslZZpV-5QcMDrM2qrpleDjKEJkkWYUA7sdwPlel5EJNTq7A/exec";
@@ -267,3 +267,4 @@ document.addEventListener("DOMContentLoaded", () => {
 
   renderReviews();
 });
+
