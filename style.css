@@ -152,14 +152,15 @@ input, select, textarea{
 }
 
 select {
-    background-color: #0f172a;   /* темный фон */
-    color: #ffffff;              /* белый текст */
-    border: 1px solid #334155;
+    background-color: #111827;
+    color: #fff;
+    border-radius: 8px;
+    padding: 10px;
 }
 
-select option {
-    background-color: #0f172a;
-    color: #ffffff;
+select:focus {
+    outline: none;
+    border-color: #ef4444; /* красный акцент */
 }
 
 textarea{min-height:96px; resize:vertical}
@@ -311,4 +312,5 @@ textarea{min-height:96px; resize:vertical}
   .rnav{ display:none; } /* на телефоне свайпом */
   .review{ min-width: 78vw; }
 }
+
 
