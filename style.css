@@ -160,7 +160,7 @@ select {
 
 select:focus {
     outline: none;
-    border-color: #ef4444; /* красный акцент */
+    
 }
 
 textarea{min-height:96px; resize:vertical}
@@ -312,5 +312,6 @@ textarea{min-height:96px; resize:vertical}
   .rnav{ display:none; } /* на телефоне свайпом */
   .review{ min-width: 78vw; }
 }
+
 
 
