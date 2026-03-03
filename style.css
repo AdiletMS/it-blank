@@ -151,6 +151,17 @@ input, select, textarea{
   outline:none;
 }
 
+select {
+    background-color: #0f172a;   /* темный фон */
+    color: #ffffff;              /* белый текст */
+    border: 1px solid #334155;
+}
+
+select option {
+    background-color: #0f172a;
+    color: #ffffff;
+}
+
 textarea{min-height:96px; resize:vertical}
 
 .footer{margin:18px 0 0; color:var(--muted); font-size:13px}
@@ -300,3 +311,4 @@ textarea{min-height:96px; resize:vertical}
   .rnav{ display:none; } /* на телефоне свайпом */
   .review{ min-width: 78vw; }
 }
+
