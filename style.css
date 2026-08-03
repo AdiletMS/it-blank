@@ -180,10 +180,51 @@ textarea{min-height:96px; resize:vertical}
   font-size:13px;
 }
 
-@media (max-width: 860px){
-  .hero{grid-template-columns: 1fr}
-  .grid{grid-template-columns: 1fr}
-  .form{grid-template-columns:1fr}
+@media (max-width: 860px) {
+  .wrap {
+    width: 100%;
+    max-width: 100%;
+    padding: 12px;
+  }
+
+  .hero,
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .form {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    width: 100%;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 24px;
+    line-height: 1.25;
+  }
+
+  .kpi {
+    grid-template-columns: 1fr;
+  }
+
+  .form .full {
+    grid-column: 1;
+  }
+
+  .price {
+    font-size: 13px;
+    table-layout: fixed;
+  }
+
+  .price th,
+  .price td {
+    padding: 9px 7px;
+    overflow-wrap: anywhere;
+  }
 }
 
 /* ===== FAQ ===== */
